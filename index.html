@@ -7,8 +7,6 @@
     <title>Home | School Website</title>
     <link rel="stylesheet" href="./styles/styles.css">
     
-   
-    
     <!-- ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 
@@ -16,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Swiper JS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     
@@ -225,7 +226,98 @@
         </section>
     </section>
 
+    <!-- Testimonials -->
+    <section class="container testimonials-container mySwiper">
+        <h2>Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar1.jpg">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum provident ea delectus itaque minima. Obcaecati, nam voluptatem blanditiis beatae hic asperiores et a adipisci nulla labore non fuga. Architecto, quos.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar2.jpg">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Ernest Achiever</h5>
+                    <small>Web Developer</small>
+                </div>
+                <div class="testimonial-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum provident ea delectus itaque minima. Obcaecati, nam voluptatem blanditiis beatae hic asperiores et a adipisci nulla labore non fuga. Architecto, quos.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar3.jpg">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Edem Quist</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum provident ea delectus itaque minima. Obcaecati, nam voluptatem blanditiis beatae hic asperiores et a adipisci nulla labore non fuga. Architecto, quos.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar4.jpg">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Hajia Bintu</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum provident ea delectus itaque minima. Obcaecati, nam voluptatem blanditiis beatae hic asperiores et a adipisci nulla labore non fuga. Architecto, quos.</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar5.jpg">
+                </div>
+                <div class="testimonial-info">
+                    <h5>Jane Doe</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum provident ea delectus itaque minima. Obcaecati, nam voluptatem blanditiis beatae hic asperiores et a adipisci nulla labore non fuga. Architecto, quos.</p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
     <!-- JS Link -->
     <script src="./JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            grabCursor: true,
+            spaceBetween: 30,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          // When window width is >= 600px
+          breakpoints: {
+            600: {
+                slidesPerView: 2,      
+            }
+          }
+        });
+    </script>
 </body>
 </html>
