@@ -488,4 +488,52 @@ footer ul li a:hover{
         background: var(--color-bg2);
         color: var(--color-white);
     }
+
+    /* Header */
+    header{
+        height: 54vh;
+        margin-bottom: 5.5rem;
+    }
+
+    .header-container{
+        gap: 0;
+        padding-bottom: 3rem;
+    }
+
+    /* Categories */
+    .categories{
+        height: auto; 
+    }
+
+    .categories-container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .categories-left{
+        margin-right: 0;
+    }
+
+    /* Popular Courses */
+    .courses{
+        margin-top: 0;
+    }
+
+    .courses-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* FAQS */
+    .faqs-container{
+        grid-template-columns: 1fr;
+    }
+
+    .faq{
+        padding: 1.5rem;
+    }
+
+    /* Footer */
+    .footer-container{
+        grid-template-columns: 1fr 1fr;
+    }
 }
