@@ -116,3 +116,29 @@
 .team-member-socials a{
     padding: 1rem;
 }
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    .about-achievements{
+        margin-top: 2rem;
+    }
+
+    .about-achievements-container{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about-achievements-left{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .team-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .team-member{
+        padding: 1rem;
+    }
+}
